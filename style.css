@@ -1,0 +1,51 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e6eef8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background: #1f6feb;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hacked overlay */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; /* hidden initially */
+  z-index: 100;
+}
+
+.hacked {
+  font-size: 96px;
+  font-weight: 900;
+  color: red;
+  letter-spacing: 8px;
+}
