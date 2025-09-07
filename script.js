@@ -15,6 +15,7 @@ startBtn.addEventListener('click', () => {
   if (passwordslist.includes(password)) {
     overlay.style.display = "flex";
     setTimeout(() => overlay.style.display = "none", 4000);
+    pwInput.value = "";  
   } else {
     alert("ACCESS DENIED");
     pwInput.value = "";  
