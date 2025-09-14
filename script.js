@@ -9,15 +9,20 @@ const passwordslist = [
   "4123", "4132", "4213", "4231", "4312", "4321"
 ];
 
+
+
+
 startBtn.addEventListener('click', () => {
   const password = pwInput.value;
 
   if (passwordslist.includes(password)) {
     overlay.style.display = "flex";
     setTimeout(() => overlay.style.display = "none", 4000);
-    pwInput.value = "";  
-  } else {
+    pwInput.value = "";
+  } else if( !passwordslist.includes(pwInput.value) ){
     alert("ACCESS DENIED");
-    pwInput.value = "";  
+    pwInput.value = "";
   }
+
+ 
 });
