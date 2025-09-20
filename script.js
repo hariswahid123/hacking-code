@@ -102,6 +102,10 @@ startBtn.addEventListener('click', () => {
     alert("Only 4 digit password allowed");
     pwInput.value = "";
     return;
+  }else if (isNaN(password)) {
+    alert("Only numbers are allowed");
+    pwInput.value = "";
+    return;
   }
 
 
